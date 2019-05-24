@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@myCss.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button fx:id="cpsButton" layoutX="250.0" layoutY="117.0" mnemonicParsing="false" onAction="#click" prefHeight="83.0" prefWidth="101.0" text="Start" />
+        <Label fx:id="text" layoutX="250.0" layoutY="230.0" prefHeight="50.0" prefWidth="101.0" text=" CPS »">
+            <font>
+                <Font size="34.0" />
+            </font></Label>
+        <Label fx:id="timer" layoutX="250.0" layoutY="293.0" prefHeight="50.0" prefWidth="101.0" text=" Timer »">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="reset" layoutX="12.0" layoutY="16.0" mnemonicParsing="false" onAction="#clickReset" prefHeight="37.0" prefWidth="77.0" text="Restart" />
+        <Label fx:id="recordText" layoutX="101.0" layoutY="18.0" prefHeight="33.0" prefWidth="178.0" text=" Record » " wrapText="true">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Button fx:id="load" layoutX="497.0" layoutY="16.0" mnemonicParsing="false" onAction="#clickLoad" prefHeight="37.0" prefWidth="89.0" text="Carica" />
+        <Button fx:id="restartButton" layoutX="401.0" layoutY="16.0" mnemonicParsing="false" onAction="#clickRestart" prefHeight="37.0" prefWidth="89.0" text="Reset" textOverrun="CLIP" />
+      <Separator fx:id="progress1" layoutX="381.0" layoutY="14.0" orientation="VERTICAL" prefHeight="381.0" prefWidth="6.0" />
+      <Separator fx:id="progress2" layoutX="14.0" layoutY="64.0" prefHeight="5.0" prefWidth="368.0" />
+      <TextArea fx:id="info" layoutX="399.0" layoutY="66.0" prefHeight="234.0" prefWidth="188.0" text="Il tasto &quot;Reset&quot; resetta il record&#10;salvatosi nel file progress.save.&#10;Il tasto &quot;Carica&quot; invece lo carica.&#10;Il tasto &quot;Restart&quot; serve per &#10;azzerare timer e cps e reiniziare&#10;a giocare.&#10;&#10;Nel momento in cui si detiene&#10;un nuovo record, il valore&#10;viene automaticamente salvato.&#10;" wrapText="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextArea>
+      <TilePane layoutX="14.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0" />
+    </children>
+</Pane>
